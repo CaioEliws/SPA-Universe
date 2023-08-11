@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fc-text: hsla(0, 0%, 100%, 1);
+    --fc-paragraph: hsla(240, 9%, 89%, 1);
+
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+
+    color: var(--fc-paragraph);
+    font-family: 'Roboto', sans-serif;
+}
+
+html.backgroundHome {
+    background-image: url(./assets/mountains-universe-1.png);
+
+    background-position: center center;
+  
+    /* Make image fixed */
+    background-attachment: fixed;
+
+    /* Not repeat images */
+    background-repeat: no-repeat;
+
+    /* Set background size auto */
+    background-size: cover;
+
+    height: 100vh;
+
+    transition: all 0.5s;
+}
+
+html.backgroundUniverse {
+    background-image: url(./assets/mountains-universe02.png);
+
+    background-position: center center;
+  
+    /* Make image fixed */
+    background-attachment: fixed;
+
+    /* Not repeat images */
+    background-repeat: no-repeat;
+
+    /* Set background size auto */
+    background-size: cover;
+
+    height: 100vh;
+
+    transition: all 0.5s;
+}
+
+html.backgroundExploration {
+    background-image: url(./assets/mountains-universe-3.png);
+
+    background-position: center center;
+  
+    /* Make image fixed */
+    background-attachment: fixed;
+
+    /* Not repeat images */
+    background-repeat: no-repeat;
+
+    /* Set background size auto */
+    background-size: cover;
+
+    height: 100vh;
+
+    transition: all 0.5s;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 5.4rem;
+
+    padding-top: 4rem;
+    margin-left: 7.2rem;
+    font-size: 2.4rem;
+}
+
+nav a {
+    text-decoration: none;
+    cursor: pointer;
+
+    color: var(--fc-paragraph);
+}
+
+nav a:hover {
+    color: var(--fc-text);
+
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+#home,
+#exploration,
+#universe {
+    display: flex;
+    flex-direction: column;
+}
+
+#home {
+    gap: 2.4rem;
+
+    align-items: center;
+    margin-top: 30rem;
+}
+
+#home h1,
+#exploration h1,
+#universe h1 {
+    font-size: 4.8rem;
+    color: var(--fc-text);
+
+    transition: all 0.5s;
+}
+
+#home a,
+.i404 a {
+    font-size: 1.4rem;
+
+    padding: 1.2rem 3.2rem;
+
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+
+    border-radius: .5rem;
+    border: .2rem solid #FFF;
+    color: var(--fc-text);
+
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#home a:hover,
+.i404 a:hover {
+    transform: scale(1.1);
+}
+
+#exploration, 
+#universe {
+    margin-left: 10rem;
+    margin-top: 12rem;
+}
+
+#exploration p,
+#universe p {
+    margin-top: 1.6rem;
+
+    font-size: 1.8rem;
+    width: 65rem;
+    height: 20rem;
+
+    line-height: 2.9rem;
+
+    transition: all 0.5s;
+}
+
+.i404 {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-top: 30rem;
+    text-align: center;
+
+    font-size: 2rem;
+}
+
+.i404 a {
+    margin-top: 4rem;
+    width: 20rem;
+}
+
